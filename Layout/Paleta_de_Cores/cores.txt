@@ -1,0 +1,23 @@
+Fundo Principal (Escuro):
+
+#1A1A2E (Um azul-marinho muito escuro, quase preto, que dá profundidade)
+
+Texto Principal (Claro):
+
+#F0F0F0 (Um cinza muito claro, quase branco, para boa legibilidade sobre o fundo escuro)
+
+Cores de Destaque / Acentos / Cards de Projeto:
+
+Azul Vibrante: #00BFFF (Azul-céu profundo, enérgico)
+
+Roxo/Magenta: #8A2BE2 (Azul-violeta vibrante, que traz um toque criativo)
+
+Verde Esmeralda/Limão: #32CD32 (Verde lima brilhante, para contraste e vitalidade)
+
+Laranja Enérgico: #FF4500 (Laranja avermelhado, forte e chamativo)
+
+Rosa Vibrante (opcional, para detalhes): #FF69B4 (Rosa choque, para elementos mais pop)
+
+Texto Secundário / Detalhes (sobre cores vibrantes):
+
+#FFFFFF (Branco puro, para contraste máximo sobre as cores vibrantes dos cards)
