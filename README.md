@@ -19,27 +19,27 @@ Aqui você encontra alguns dos meus projetos que destacam minhas habilidades e p
 
 Descrição: Breve descrição do projeto, o que ele faz e qual problema ele resolve.
 
-Tecnologias: HTML, CSS, JavaScript, [Outra Tecnologia]
+Tecnologias: HTML, CSS, JavaScript.
 
 Funcionalidades: Listar 2-3 funcionalidades chave.
 
-Link do Repositório: https://github.com/Gabriel-GDS-dev/NomeDoProjeto1 (Adicione o https://www.google.com/search?q=link real do seu repositório)
+Link do Repositório: https://github.com/Gabriel-GDS-dev/NomeDoProjeto1
 
-Ver Projeto Online (se aplicável): https://linkdoprojeto.com (Ex: GitHub Pages, Vercel, Netlify)
+Ver Projeto Online: https://linkdoprojeto.com
 
 [Nome do Projeto 2]:
 
 Descrição: Breve descrição do projeto.
 
-Tecnologias: Java, [Framework/Biblioteca Mobile]
+Tecnologias: Java.
 
 Funcionalidades: Listar 2-3 funcionalidades chave.
 
 Link do Repositório: https://github.com/Gabriel-GDS-dev/NomeDoProjeto2
 
-Ver Projeto Online/Download (se aplicável): Link para APK/Play Store/App Store
+Ver Projeto Online/Download: Link para APK/Play Store/App Store
 
-[Nome do Projeto 3 (ex: um projeto menor ou de estudo)]:
+[Nome do Projeto 3]:
 
 Descrição: Breve descrição.
 
