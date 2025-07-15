@@ -1,6 +1,18 @@
 
 // Carrossel horizontal de projetos
 document.addEventListener('DOMContentLoaded', function () {
+    // Seta para o topo
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollBtn.style.display = 'block';
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+    });
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
     // Dados de projetos para teste
     const projetosWeb = [
         {titulo: 'Projeto 1', desc: 'Descrição do Projeto 1', tipo: 'Website', cor: 'card-blue'},
