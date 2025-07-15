@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function renderCarousel(trackId, projetos, visibleCount) {
         const track = document.getElementById(trackId);
         track.innerHTML = '';
-        const wrapper = document.createElement('div');
+        // Usar section para o wrapper, conforme HTML semântico
+        const wrapper = document.createElement('section');
         wrapper.className = 'carousel-row';
         track.appendChild(wrapper);
         projetos.forEach((proj, i) => {
