@@ -1,3 +1,101 @@
+/* Linha do carrossel para os cards ficarem lado a lado */
+.carousel-row {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+}
+/* Carrossel de projetos */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.carousel-arrow-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.carousel-arrow {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,191,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s, opacity 0.2s;
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
+}
+.carousel-arrow:disabled,
+.carousel-arrow.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    background: linear-gradient(135deg, #888 60%, #444 100%);
+    box-shadow: none;
+}
+.carousel-arrow:not(:disabled):hover {
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+    box-shadow: 0 4px 16px rgba(0,191,255,0.25);
+    transform: scale(1.08);
+}
+/* Novo carrossel horizontal */
+.carousel-track {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-track .project-card {
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 260px;
+    margin: 0;
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+.carousel-track .project-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(0,191,255,0.18);
+}
+@media (max-width: 900px) {
+    .carousel-row {
+        gap: 1rem;
+    }
+    .carousel-track .project-card {
+        min-width: 160px;
+        max-width: 180px;
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 700px) {
+    .carousel-row {
+        gap: 0.5rem;
+    }
+    .carousel-track .project-card {
+        min-width: 120px;
+        max-width: 140px;
+        font-size: 0.85rem;
+        padding: 1rem 0.7rem 0.7rem 0.7rem;
+    }
+}
 /* Sobre Mim - Novo Layout */
 .about-section {
     width: 100%;
@@ -80,15 +178,58 @@
     margin: 0 0 0.7rem 0;
     font-weight: 700;
 }
+
 .skills-block ul {
-    list-style: disc inside;
-    color: var(--text-main);
-    font-size: 1rem;
+    list-style: none;
     margin: 0;
-    padding-left: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }
 .skills-block ul li {
-    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 191, 255, 0.08);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: var(--text-main);
+    font-size: 1.05rem;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: background 0.2s;
+}
+.skills-block ul li::before {
+    content: '\2714'; /* checkmark icon */
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-right: 0.7rem;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.skills-block ul li:hover {
+    background: rgba(0, 191, 255, 0.18);
+    color: var(--accent-blue);
+}
+
+.skills-block {
+    background: linear-gradient(135deg, #23234a 80%, var(--accent-blue) 100%);
+    border-radius: 16px;
+    padding: 1.5rem 1.7rem 1.5rem 1.7rem;
+    box-shadow: 0 2px 12px rgba(0,191,255,0.08);
+    margin-bottom: 1.2rem;
+    min-width: 220px;
+    max-width: 340px;
+    width: 100%;
+    border: 1.5px solid var(--accent-blue);
+}
+.skills-block h3 {
+    color: var(--accent-blue);
+    font-size: 1.18rem;
+    margin: 0 0 1.1rem 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 4px rgba(0,191,255,0.10);
 }
 
 @media (max-width: 1100px) {
@@ -209,7 +350,7 @@ body {
 
 .nav-list {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -305,11 +446,9 @@ body {
 }
 
 .projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
 }
 
 .projects-sidebar {
@@ -398,9 +537,10 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    flex: 1;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 .project-card {
@@ -438,22 +578,6 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
 }
-
-.project-card p {
-    margin: 0 0 0.7rem 0;
-    font-size: 1rem;
-}
-
-.project-type {
-    background: rgba(0, 0, 0, 0.15);
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    border-radius: 6px;
-    padding: 0.2rem 0.7rem;
-    align-self: flex-start;
-}
-
-/* Footer */
 footer {
     background: #181828;
     color: var(--text-main);
@@ -488,7 +612,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-
     .main-content,
     .header-bar,
     .header-hero,
@@ -496,18 +619,21 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     .projects-section {
         flex-direction: column;
         gap: 1.5rem;
     }
-
     .projects-sidebar {
         min-width: 0;
         max-width: 100%;
     }
-
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .project-card {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
