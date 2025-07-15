@@ -5,13 +5,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollBtn = document.getElementById('scrollToTopBtn');
     window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
-            scrollBtn.style.display = 'block';
+            scrollBtn.classList.add('show');
         } else {
-            scrollBtn.style.display = 'none';
+            scrollBtn.classList.remove('show');
         }
     });
     scrollBtn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Animação mais lenta para subir
+        const scrollDuration = 1200;
+        const scrollStep = -window.scrollY / (scrollDuration / 16);
+        function smoothScroll() {
+            if (window.scrollY > 0) {
+                window.scrollBy(0, scrollStep);
+                requestAnimationFrame(smoothScroll);
+            }
+        }
+        smoothScroll();
     });
     // Dados de projetos para teste
     const projetosWeb = [

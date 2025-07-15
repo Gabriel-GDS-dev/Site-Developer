@@ -14,7 +14,16 @@
     box-shadow: 0 2px 12px rgba(0,191,255,0.18);
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-    display: none;
+    display: block;
+    opacity: 0;
+    transform: translateY(40px);
+    pointer-events: none;
+    transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+#scrollToTopBtn.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 #scrollToTopBtn:hover {
     background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
