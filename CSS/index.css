@@ -1,3 +1,131 @@
+/* Sobre Mim - Novo Layout */
+.about-section {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* background: #23234a;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem;
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 2.5rem auto; */
+}
+.about-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #23234a;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem;
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 2.5rem auto;
+    min-width: 260px;
+    max-width: 420px;
+    margin-right: 2rem;
+}
+.about-left .profile-avatar {
+    margin-bottom: 1.2rem;
+}
+.about-left h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.7rem;
+    color: var(--text-secondary);
+}
+.about-left .profile-badge {
+    margin-bottom: 1.2rem;
+}
+.about-left .profile-desc {
+    color: var(--text-main);
+    font-size: 1.08rem;
+    margin: 1.2rem 0 0 0;
+    line-height: 1.7;
+}
+.about-right {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    min-width: 220px;
+    background: #23234a;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem;
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto 2.5rem auto;
+}
+.skills-block {
+    background: #23234a;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 0.5rem;
+    min-width: 220px;
+    max-width: 340px;
+    width: 100%;
+}
+.skills-block h3 {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin: 0 0 0.7rem 0;
+    font-weight: 700;
+}
+.skills-block ul {
+    list-style: disc inside;
+    color: var(--text-main);
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+.skills-block ul li {
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 1100px) {
+    .about-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+        padding: 1.5rem 0.7rem;
+    }
+    .about-left, .about-right {
+        max-width: 100%;
+        margin-right: 0;
+        align-items: flex-start;
+    }
+    .about-right {
+        flex-direction: row;
+        gap: 1.2rem;
+        justify-content: flex-start;
+    }
+    .skills-block {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.2rem;
+    }
+    .about-right {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
 .footer-list {
     list-style: none;
     padding: 0;
@@ -170,6 +298,7 @@ body {
 /* Main Content */
 .main-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 2rem 2.5rem 0 2.5rem;
@@ -177,6 +306,7 @@ body {
 
 .projects-section {
     display: flex;
+    flex-wrap: wrap;
     gap: 2.5rem;
     width: 100%;
     max-width: 1300px;
