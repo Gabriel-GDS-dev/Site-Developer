@@ -1,44 +1,49 @@
-Olá, sou o Gabriel Goulart de Souza! 👋
-💻 Sobre Mim
-Sou um desenvolvedor focado em transformar ideias em soluções digitais eficientes. Minha paixão reside em criar sites e aplicativos que não apenas funcionam, mas que também oferecem uma experiência intuitiva e agradável ao usuário. Estou sempre em busca de aprendizado e de aplicar as melhores práticas de desenvolvimento, com atenção à qualidade do código e aos princípios de UI/UX.
+# 👋 Olá! Eu sou Gabriel Goulart de Souza
 
-🛠️ Habilidades
-Desenvolvimento Web: HTML, CSS, JavaScript
+Sou um desenvolvedor apaixonado por transformar ideias em soluções digitais funcionais, intuitivas e bem projetadas. Trabalho com foco em performance, usabilidade e boas práticas de desenvolvimento, sempre buscando evolução constante.
 
-Desenvolvimento Mobile: Java
+---
 
-Controle de Versão: Git, GitHub
+## 💻 Sobre Mim
 
-Design & Prototipagem: Figma
+Com experiência em desenvolvimento web e mobile, atuo desde a concepção até a entrega de projetos digitais. Tenho atenção especial à qualidade do código e aos princípios de UI/UX para garantir experiências agradáveis e acessíveis ao usuário.
 
-<!--
+---
 
-🚀 Meus Projetos
-Esta seção está desativada. Quando tiver projetos, remova este comentário e adicione a informação abaixo.
+## 🛠️ Habilidades Técnicas
 
-[Nome do Projeto 1]
-Descrição: Uma breve descrição do projeto e o problema que ele resolve.
+- **Desenvolvimento Web:** HTML, CSS, JavaScript  
+- **Desenvolvimento Mobile:** Java (Android)  
+- **Controle de Versão:** Git & GitHub  
+- **Design e Prototipação:** Figma  
 
-Tecnologias Utilizadas: [Tecnologias Usadas]
+---
 
-Link do Repositório: <https://github.com/Gabriel-GDS-dev/NomeDoProjeto1>
+## 🚀 Projetos
+<!--  
+Esta seção está temporariamente desativada.  
+Quando tiver projetos disponíveis, remova este comentário e insira as informações a seguir:
 
-Ver Projeto Online: [Link para o projeto]
-
+### 📌 [Nome do Projeto]
+**Descrição:** Breve descrição do projeto e o problema que resolve.  
+**Tecnologias Utilizadas:** [HTML, CSS, JS, etc.]  
+🔗 [Repositório](https://github.com/Gabriel-GDS-dev/NomeDoProjeto) | [Ver Online](https://link-do-projeto)
 -->
 
-📧 Onde Me Encontrar
-Para conversarmos sobre tecnologia, projetos ou oportunidades, entre em contato:
+---
 
-Email: gabriel.gsouzza6@gmail.com
+## 📬 Contato
 
-Instagram: @Gabriel.Goulart
+Entre em contato para parcerias, freelas ou apenas bater um papo sobre tecnologia:
 
-WhatsApp: WhatsApp
+- 📧 Email: [gabriel.gsouzza6@gmail.com](mailto:gabriel.gsouzza6@gmail.com)  
+- 📱 Instagram: [@Gabriel.Goulart](https://www.instagram.com/gabriel_gds_dev)  
+- 💬 WhatsApp: [Clique para conversar](https://wa.me/5548998101048)  
+- 🌐 Portfólio: [seusite.com.br](https://seusite.com.br)
 
-Portfólio/Website: https://seusite.com.br
+---
 
-👨‍💻 Desenvolvido por
-Gabriel Goulart de Souza
+## 👨‍💻 Desenvolvido por
 
-GitHub
+**Gabriel Goulart de Souza**  
+[GitHub](https://github.com/Gabriel-GDS-dev)
