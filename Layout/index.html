@@ -1,162 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um site contendo as minhas informações, projetos e mídias sociais.">
-    <meta name="theme-color" content="#1A1A2E">
-    <meta name="timezone" content="America/Sao_Paulo">
-    <title>Portfólio Gabriel Goulart de Souza</title>
-    <link rel="icon" href="/Ícone/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Developer</title>
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <script defer src="../JS/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
-
 <body>
-    <header class="main-header">
-        <section class="header-bar">
-            <img src="/Ícone/icone.ico" alt="Logo do Site" class="logo">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <form class="header-actions" action="#resumo">
-                <button class="btn-accent" type="submit">Resumo</button>
-            </form>
-        </section>
-        <section class="header-hero">
-            <ul class="hero-graphics" aria-hidden="true">
-                <li class="graphic graphic-1"></li>
-                <li class="graphic graphic-2"></li>
-                <li class="graphic graphic-3"></li>
-                <li class="graphic graphic-4"></li>
-            </ul>
-            <h1 class="portfolio-title">Portfólio<br>Gabriel Goulart de Souza</h1>
-        </section>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Site Developer</h1>
+      <p>Criação de sites modernos, lojas virtuais e sistemas personalizados</p>
+    </div>
+  </header>
 
-    <main class="main-content">
-        <section class="about-section" id="sobre">
-            <section class="about-container">
-                <article class="about-left">
-                    <figure class="profile-avatar" aria-label="Avatar do Gabriel"></figure>
-                    <header>
-                        <h2>Gabriel Goulart de Souza</h2>
-                        <mark class="profile-badge">Desenvolvedor Full Stack</mark>
-                    </header>
-                    <p class="profile-desc">Olá! Meu nome é Gabriel, sou um desenvolvedor apaixonado por tecnologia,
-                        inovação e criatividade. Busco sempre entregar as melhores experiências e superar as
-                        expectativas dos clientes, com foco em qualidade, eficiência e design moderno.</p>
-                </article>
-                <aside class="about-right" aria-label="Skills e Destaques">
-                    <section class="skills-block">
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Comunicação clara e objetiva</li>
-                            <li>Trabalho em equipe</li>
-                            <li>Resolução de problemas</li>
-                            <li>Proatividade e criatividade</li>
-                            <li>Organização e responsabilidade</li>
-                        </ul>
-                    </section>
-                    <section class="skills-block">
-                        <h3>Hard Skills</h3>
-                        <ul>
-                            <li>HTML5, CSS3 (Flexbox, Grid, Responsividade)</li>
-                            <li>JavaScript (ES6+), DOM, APIs</li>
-                            <li>Versionamento com Git e GitHub</li>
-                            <li>Design de interfaces e UX/UI</li>
-                            <li>Conhecimento básico em bancos de dados</li>
-                            <li>Criação de sistemas e sites dinâmicos</li>
-                        </ul>
-                    </section>
-                    <section class="skills-block">
-                        <h3>Outros Destaques</h3>
-                        <ul>
-                            <li>Aprendizado contínuo e adaptação a novas tecnologias</li>
-                            <li>Participação em projetos colaborativos</li>
-                            <li>Comprometimento com prazos e resultados</li>
-                        </ul>
-                    </section>
-                </aside>
-            </section>
-        </section>
-        <section class="projects-section" id="projetos">
-            <h2 style="color: var(--text-secondary); font-size: 2rem; text-align:center; margin-bottom: 2.2rem;">
-                Projetos Web</h2>
-            <section class="carousel-container">
-                <aside class="carousel-arrow-group">
-                    <button class="carousel-arrow left" aria-label="Projetos anteriores">&#8592;</button>
-                </aside>
-                <section class="carousel-track" id="carousel-web">
-                    <!-- Projetos Web serão inseridos via JS -->
-                </section>
-                <aside class="carousel-arrow-group">
-                    <button class="carousel-arrow right" aria-label="Próximos projetos">&#8594;</button>
-                </aside>
-            </section>
-            <h2 style="color: var(--text-secondary); font-size: 2rem; text-align:center; margin: 3.5rem 0 2.2rem 0;">
-                Projetos Mobile</h2>
-            <section class="carousel-container">
-                <aside class="carousel-arrow-group">
-                    <button class="carousel-arrow left" aria-label="Projetos anteriores">&#8592;</button>
-                </aside>
-                <section class="carousel-track" id="carousel-mobile">
-                    <!-- Projetos Mobile serão inseridos via JS -->
-                </section>
-                <aside class="carousel-arrow-group">
-                    <button class="carousel-arrow right" aria-label="Próximos projetos">&#8594;</button>
-                </aside>
-            </section>
-        </section>
-    </main>
+  <section class="sobre-mim">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou Gabriel Goulart, desenvolvedor web freelancer com experiência em criação de soluções digitais completas.
+        Trabalho com foco em desempenho, design moderno e experiência do usuário.
+        Transformo ideias em projetos profissionais e funcionais.
+      </p>
+    </div>
+  </section>
 
-    <footer>
-        <button id="scrollToTopBtn" aria-label="Ir para o topo">
-            &#8593;
-        </button>
-        <section class="footer-content">
-            <address class="footer-left">
-                <strong class="footer-label">Desenvolvedor</strong>
-                <span class="footer-name">Gabriel Goulart de Souza</span>
-            </address>
-            <nav class="footer-right" id="contato" aria-label="Redes Sociais">
-                <ul class="footer-list">
-                    <li class="footer-contact">
-                        <a href="https://wa.me/998101048" target="_blank" rel="noopener noreferrer"
-                            class="footer-icon-link" aria-label="WhatsApp">
-                            <img src="/Ícone/WhatsApp-icone.png" alt="WhatsApp" class="footer-icon">
-                        </a>
-                        <a href="https://wa.me/998101048" target="_blank" rel="noopener noreferrer"
-                            class="footer-link">WhatsApp</a>
-                    </li>
-                    <li class="footer-contact">
-                        <a href="https://github.com/Gabriel-GDS-dev" target="_blank" rel="noopener noreferrer"
-                            class="footer-icon-link" aria-label="GitHub">
-                            <img src="/Ícone/github-icone.png" alt="GitHub" class="footer-icon">
-                        </a>
-                        <a href="https://github.com/Gabriel-GDS-dev" target="_blank" rel="noopener noreferrer"
-                            class="footer-link">GitHub</a>
-                    </li>
-                    <li class="footer-contact">
-                        <a href="mailto:gabriel.gsouzza6@gmail.com" target="_blank" rel="noopener noreferrer"
-                            class="footer-icon-link" aria-label="Email">
-                            <img src="/Ícone/email-icone.png" alt="Email" class="footer-icon">
-                        </a>
-                        <a href="mailto:gabriel.gsouzza6@gmail.com" target="_blank" rel="noopener noreferrer"
-                            class="footer-link">gabriel.gsouzza6@gmail.com</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </footer>
+  <!-- Seção de Projetos (Desativada) -->
+  <section class="projetos hidden">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div id="project-list"></div>
+    </div>
+  </section>
 
-    <script src="/JS/index.js"></script>
+  <section class="instagram">
+    <div class="container">
+      <h2>Últimos Trabalhos no Instagram</h2>
+      <div id="gallery" class="gallery">
+        <p>Carregando imagens...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-icons">
+        <a href="mailto:gabriel.gsouzza6@gmail.com" target="_blank" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/5548998101048" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/gabriel_gds_dev" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>© 2025 Site Developer - Gabriel Goulart</p>
+    </div>
+  </footer>
 </body>
-
 </html>
