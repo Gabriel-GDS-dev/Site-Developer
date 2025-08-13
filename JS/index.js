@@ -5,16 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function carregarProjetos() {
   const projetosSites = [
     {
-      titulo: "Site Colina Verde",
-      descricao: "Site com cardápio interativo e painel administrativo.",
-    },
-    {
-      titulo: "Portfólio Developer",
-      descricao: "Página pessoal com informações e contato.",
-    },
-    {
-      titulo: "Landing Page Cauda de Dragão",
-      descricao: "Exibição de fotos e link com Instagram.",
+      titulo: "Site JJ Eventos",
+      descricao: "Site de eventos.",
+      url: "https://jjeventoss.com.br"
     },
   ];
 
@@ -22,11 +15,13 @@ function carregarProjetos() {
     {
       titulo: "App Delivery Express",
       descricao: "Aplicativo de pedidos para restaurantes.",
+      url: "https://play.google.com/store/apps/details?id=deliveryexpress"
     },
     {
       titulo: "App Finanças Pessoais",
       descricao: "Controle de gastos com gráficos e alertas.",
-    },
+      url: "https://play.google.com/store/apps/details?id=financaspessoais"
+    }
   ];
 
   inserirProjetos("projetos-sites", projetosSites);
@@ -38,6 +33,18 @@ function inserirProjetos(containerId, lista) {
   if (!container) return;
 
   lista.forEach((projeto) => {
+    // Cria o link se houver URL, senão só o card
+    let wrapper;
+    if (projeto.url) {
+      wrapper = document.createElement("a");
+      wrapper.href = projeto.url;
+      wrapper.target = "_blank";
+      wrapper.rel = "noopener noreferrer";
+      wrapper.style.textDecoration = "none";
+    } else {
+      wrapper = document.createElement("div");
+    }
+
     const card = document.createElement("section");
     card.className = "card";
 
@@ -49,7 +56,16 @@ function inserirProjetos(containerId, lista) {
 
     card.appendChild(titulo);
     card.appendChild(descricao);
-
-    container.appendChild(card);
+    wrapper.appendChild(card);
+    container.appendChild(wrapper);
   });
+}
+// Função para modificar a url de um projeto específico
+function modificarUrlProjeto(containerId, index, novaUrl) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const wrappers = container.querySelectorAll('a, div');
+  if (wrappers[index] && wrappers[index].tagName === 'A') {
+    wrappers[index].href = novaUrl;
+  }
 }
